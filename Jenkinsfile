@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Code') {
-            steps {
-                git 'https://github.com/SaiNimbalkar/pr1.git'
-            }
-        }
-
         stage('Install Dependencies') {
             steps {
                 bat 'pip install -r requirements.txt'
